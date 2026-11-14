@@ -47,6 +47,7 @@ void AppManager::initApp()
 
     App::instance().init();
     schedule([]() { App::instance().task(); });
+
     this->createApp();
 }
 

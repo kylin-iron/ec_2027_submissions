@@ -26,7 +26,7 @@ if(NOT ARM_NONE_EABI_GCC)
 endif()
 
 get_filename_component(ARM_TOOLCHAIN_BIN_DIR "${ARM_NONE_EABI_GCC}" DIRECTORY)
-set(ARM_NONE_EABI_GXX     "${ARM_TOOLCHAIN_BIN_DIR}/arm-none-eabi-g++")
+set(ARM_NONE_EABI_GXX     "${ARM_TOOLCHAIN_BIN_DIR}/arm-none-eabi-g++.exe")
 set(ARM_NONE_EABI_OBJCOPY "${ARM_TOOLCHAIN_BIN_DIR}/arm-none-eabi-objcopy")
 set(ARM_NONE_EABI_SIZE    "${ARM_TOOLCHAIN_BIN_DIR}/arm-none-eabi-size")
 

@@ -1,6 +1,10 @@
 # Add the sources
 set(SOURCES)
 
+if(EXTENSION_ET08A)
+  list(APPEND SOURCES RemoteCtrl/ET08A/ET08A.cpp)
+endif()
+
 # Add the library
 add_library(Extensions STATIC ${SOURCES})
 

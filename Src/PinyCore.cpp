@@ -4,6 +4,7 @@
 #include "AppManager.hpp"
 #include "FreeRTOS.h"
 #include "task.h"
+#include"CAN.hpp"
 
 #if SOC_USE_CUSTOM
 #include "Soc.hpp"
@@ -19,6 +20,10 @@ void PinyCore::bspInit()
 
 #if BSP_USE_CAN
     Can::instance().init();
+#endif
+
+#if APP_USE_CAN
+    CAN::instance().init();
 #endif
 }
 
